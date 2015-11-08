@@ -41,7 +41,14 @@
         "default": "Ctrl+Shift+E",
         "mac": "Command+Shift+E"
       },
-      "description": "Open options page in a new tab."
+      "description": "Open the options page in a new tab."
+    },
+    "add-page": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+A",
+        "mac": "Command+Shift+A"
+      },
+      "description": "Send the active tab's info to storage."
     }
   }
 }
