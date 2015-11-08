@@ -1,0 +1,47 @@
+{
+  "manifest_version": 2,
+  "name": "Bookmark Red",
+  "short_name": "Bookmark Red",
+  "description": "Add extra pseudobookmark buttons",
+  "version": "1.0.1",
+  "minimum_chrome_version": "38",
+  
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+    
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true,
+    "open_in_tab": true
+  },
+
+  "icons": {
+    "16": "assets/icon16.png",
+    "128": "assets/icon128.png"
+  },
+  
+  "page_action": {
+    "default_icon": {
+      "19": "assets/icon19.png",
+      "38": "assets/icon38.png"
+    },
+    "default_title": "Red Bookmark"
+  },
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  
+  "commands": {
+    "open-options": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+E",
+        "mac": "Command+Shift+E"
+      },
+      "description": "Open options page in a new tab."
+    }
+  }
+}
