@@ -2,15 +2,27 @@
 <html>
 <head>
   <title>PseudoBookmarks Red</title>
-  <style>body{padding:10px}img{height:16px;width:16px}</style>
+  <style>body{padding:10px}#buttons{margin-top:20px;margin-bottom:20px}.item{transition: background-color .25s linear}img{height:16px;width:16px;vertical-align:middle;padding-right:3px}a{color:#D21414;text-decoration:none;transition: color .25s linear}a:hover{color:blue}</style>
 </head>
 
 <body>
-  <p id="clickable"></p>
-
-  <button id="delete">Delete all</button>
+  <div id="clickable"></div>
   
-  <button id="export">Export as markdown</button>
+  <div id="buttons">
+
+  <button id="invertSelection">Invert selection</button>
+
+  <button id="delete">Delete</button>
+  
+  <button id="exportMark">Export as markdown</button>
+  
+  <button id="exportJson">Export as json</button>
+  
+  <button id="importJson">Import as json</button>
+  
+  </div>
+  
+  <textarea id="import" cols='60' rows='8'></textarea><p><b>json Format: {url : {'favicon': faviconurl, 'title': title}}</b></p>
   
   <p id="region"></p>
 
