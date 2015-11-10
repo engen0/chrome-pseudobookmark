@@ -40,7 +40,7 @@ function loadClickable() {
   var result = "";
   chrome.storage.sync.get(function(items) {
     for (var url in items) {
-      result += `<div class="item"><img src="${items[url].favicon}"><a href="${url}">${items[url].title}</a></div>`;
+      result += `<div class="item"><img src="${items[url].favicon}"><a href="${url}" target="_blank">${items[url].title}</a></div>`;
     }
     document.getElementById('clickable').innerHTML = result;
   });
